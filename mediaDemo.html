@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Demo</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        @media screen {
+            #d {
+                border: 5px solid gold;
+                background-color: lightblue;
+                padding:20px;
+                /* font-size: 2em; */
+            }
+            h1 {
+                color:navy;
+            }
+            p {
+                color:red;
+            }
+        }
+        @media (orientation: portrait) {
+            #d {
+                border : 5px solid red;
+                background-color: pink;
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width:900px) {
+            #d {
+                background-color: lime;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+        <h1>Hello World</h1>
+</body>
+</html>
+
+<!-- 
+A menu is displaced at top with an icon and home and contact us link if screen width is greater than 800 px menu is shown horizontally as it is shown vertically 
+
+-->

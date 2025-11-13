@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        img {
+            height:200px;
+            width:200px;
+        }
+        #i1 {
+           border-radius:50%; 
+           transition: all 3s;
+        }
+        #i1:hover {
+            transform:scaleX(-1);
+            /* or rotateY(180deg) */
+        }
+        #i2 {
+            opacity:0.5;
+        }
+        /* Responsive image */
+        #i3 {
+            max-width:  100%;
+            height:auto;
+        }
+        /* Test on image */
+        #i4 {
+            opacity: 0.5;
+        }
+        #p4 {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+        #l{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #r {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        /* thumbnail image */
+        #i5 {
+            border:2px solid black;
+            padding:15px;
+            border-radius:10px;
+        }
+        #i5:hover {
+            box-shadow: 5px 5px 5px grey;
+        }
+    </style>
+</head>
+<body>
+    <img src="big.jpg" alt="" id="i1">
+    <img src="big.jpg" alt="" id="i2">
+    <img src="big.jpg" alt="" id="i3">
+    <div id="p4">
+        <img src="big.jpg" alt="" id="i4">
+        <div id="l">hello left</div>
+        <div id="r">hello right</div>
+    </div>
+    <img src="big.jpg" alt="" id="i5">
+</body>
+</html>
+
+<!-- 5 Marks 
+ ch-4==>selectors / flex/ grid
+ ch-5==>transition/animation/transform/gradient
+ -->

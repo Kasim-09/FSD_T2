@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color:green;
+            background-color: lime;
+        }
+        a:visited {
+            color:black;
+            background-color: lime;
+            
+        }
+        a:hover{
+            font-size:40px;
+        }
+        a:active{
+            text-decoration: none;
+            color:gold;
+            background-color: black;
+        }
+        .d>p:nth-child(3) {
+            background-color: yellow;
+        }
+        div:not(.sp) {
+            color:red;
+            background-color: pink;
+        }
+        h1:hover {
+            color:deepblue;
+            background-color: aqua ;
+            font-size: 30px;
+        }
+        input:focus {
+            background-color:lightblue;
+            color:hotpink;
+            font-size: 25px;
+        }
+
+        h1::before {
+            content:url("b1.jpg");
+            color:red;
+        }
+        h1::after {
+            content:  "☠" ;
+            color:red;
+        }
+        p::first-line {
+            color:blue;
+            background-color: purple;
+            color:blue;
+            font-size: 40px;
+        }
+        ul>li::marker {
+            color:orange;
+            font-size:30px;
+        }
+        /* ::selection {
+            background-color: black;
+            color:gold;
+        } */
+        p::selection {
+            background-color: black;
+            color:gold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <a href="#">link 1</a>
+    <a href="##">link 2</a>
+    <a href="###" id="l">link 3</a>
+    <div class="d">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptatem modi molestiae odio commodi laborum est vero consequuntur magni cupiditate, sed animi rerum labore, perferendis soluta qui non excepturi, voluptatum blanditiis. Explicabo dolore tempora non dolor quia deleniti a quae tempore ratione nesciunt aliquid repellendus sequi illo odio animi, nulla ipsam impedit incidunt. Fugit, excepturi. Suscipit nesciunt omnis rerum sed fuga dolorem maxime ipsum harum fugiat aspernatur, fugit atque iste velit aut at sit, similique, tempore laborum asperiores a facilis animi. Beatae, qui expedita? Necessitatibus error sunt iusto architecto fugit, blanditiis repudiandae natus, nam aspernatur vel porro alias harum hic.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptatem modi molestiae odio commodi laborum est vero consequuntur magni cupiditate, sed animi rerum labore, perferendis soluta qui non excepturi, voluptatum blanditiis. Explicabo dolore tempora non dolor quia deleniti a quae tempore ratione nesciunt aliquid repellendus sequi illo odio animi, nulla ipsam impedit incidunt. Fugit, excepturi. Suscipit nesciunt omnis rerum sed fuga dolorem maxime ipsum harum fugiat aspernatur, fugit atque iste velit aut at sit, similique, tempore laborum asperiores a facilis animi. Beatae, qui expedita? Necessitatibus error sunt iusto architecto fugit, blanditiis repudiandae natus, nam aspernatur vel porro alias harum hic.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptatem modi molestiae odio commodi laborum est vero consequuntur magni cupiditate, sed animi rerum labore, perferendis soluta qui non excepturi, voluptatum blanditiis. Explicabo dolore tempora non dolor quia deleniti a quae tempore ratione nesciunt aliquid repellendus sequi illo odio animi, nulla ipsam impedit incidunt. Fugit, excepturi. Suscipit nesciunt omnis rerum sed fuga dolorem maxime ipsum harum fugiat aspernatur, fugit atque iste velit aut at sit, similique, tempore laborum asperiores a facilis animi. Beatae, qui expedita? Necessitatibus error sunt iusto architecto fugit, blanditiis repudiandae natus, nam aspernatur vel porro alias harum hic.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptatem modi molestiae odio commodi laborum est vero consequuntur magni cupiditate, sed animi rerum labore, perferendis soluta qui non excepturi, voluptatum blanditiis. Explicabo dolore tempora non dolor quia deleniti a quae tempore ratione nesciunt aliquid repellendus sequi illo odio animi, nulla ipsam impedit incidunt. Fugit, excepturi. Suscipit nesciunt omnis rerum sed fuga dolorem maxime ipsum harum fugiat aspernatur, fugit atque iste velit aut at sit, similique, tempore laborum asperiores a facilis animi. Beatae, qui expedita? Necessitatibus error sunt iusto architecto fugit, blanditiis repudiandae natus, nam aspernatur vel porro alias harum hic.</p>
+    </div>
+    <div class="sp">abc</div>
+    <div class="c">abc</div>
+    <div class="c">abc</div>
+    <br>
+    <br>
+    <form>
+        First name:
+        <input type="text" placeholder="Enter name : ">
+    </form>
+    <br>
+    <br>
+    <ul>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+    </ul>
+    <ol>
+        <li>pqr</li>
+        <li>pqr</li>
+        <li>pqr</li>
+        <li>pqr</li>
+    </ol>
+</body>
+</html>

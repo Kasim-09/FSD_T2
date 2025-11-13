@@ -1,0 +1,99 @@
+<!--Use appropriate seletors to complete the following:-
+    1. Create a nexted list as given. All the direct child li must have color brown and size 20px.
+        all the nexted li must have color orange and size 30px.
+    2. Create a table with 3 rows odd rows having bg color pink and even rows having yellow.   
+    3. Create a form with one textbox, one email and two buttons. Use attribute selectors for different    background color for each input type.                                  --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <!-- <style>
+        li {
+            color: brown;
+            font-size: 20px;
+        }
+    </style> -->
+    <style>
+      ul li {
+        color: orange;
+        font-size: 30px;
+      }
+      ul>li {
+        color: brown;
+        font-size: 20px;
+      }
+      .odd {
+        background-color: pink;
+      }
+      .even {
+        background-color: yellow;
+      }
+      [type="text"] {
+        background-color: blue;
+        color:white;
+      }
+      [type="email"] {
+        background-color: red;
+      }
+      [type="button"] {
+        background-color: grey;
+      }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Apples</li>
+        <ol>
+            <li style="color: orange; font-size: 30px;">Green</li>
+            <li  style="color: orange; font-size: 30px;">Red</li>
+        </ol>
+    </ul>
+    <ul>
+        <li>Pineapple</li>
+    </ul>
+    <ul>
+        <li>Dragonfruit</li>
+        <ol type="a">
+            <li  style="color: orange; font-size: 30px;">White</li>
+            <li  style="color: orange; font-size: 30px;">Red</li>
+        </ol>
+    </ul>
+    <br>
+    <br>
+    <table border="2" height="50" width="100" rules="all">
+        <tbody align="center">
+            <tr class="odd">
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr class="even">
+                <td>b</td>
+                <td>e</td>
+            </tr>
+            <tr class="odd">
+                <td>c</td>
+                <td>f</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <form action="f2.html" method="get">
+        <fieldset>
+            <legend>Register</legend>
+            <label>First name: <input type="text" name="fn" placeholder="Enter your first name" autofocus required autocomplete minlength="4" maxlength="15"></label>
+            <br>
+            <br>
+             <label>Email: <input type="email" name="email" placeholder="Enter your email" required></label>
+             <br>
+             <br>
+             <input type="button" value="b1">
+             <input type="button" value="b2">
+        <br>
+        </fieldset>
+    </form>
+</body>
+</html>
