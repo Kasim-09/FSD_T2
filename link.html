@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd's CSSlink</title>
+    <style>
+
+        a:link{
+            color: green;
+            background-color: PINK;
+        }
+        a:visited{
+            color: black;
+            background-color: lime;
+        }
+        a:hover{
+            font-size: 40px;
+        }
+        a:active{
+            text-decoration: none;
+            color: gold;
+            background-color: black;
+        } 
+        .d>p:nth-child(3){
+            background-color: yellow;
+        }  
+        div:not(.sp){
+            color: red;
+            background-color: pink;
+        }
+        h1:hover{
+            color:deepblue;
+            background-color: aqua;
+            font-size: 30px;
+        }
+        input:focus{
+            background-color: aqua;
+            color:hotpink;
+            font-size: 25px;
+        }
+        h1::before{
+            content:"(●'◡'●)༼ つ  ༽つ ";
+            color: red;
+        }
+        h1::after{
+            content:url("photo.jpg");
+
+        }
+        p::first-line{
+            color: blue;
+            background-color: purple;
+            color: blue;
+            font-size: 40px;
+        }
+        li::marker{
+            color: orange;
+            font-size: 30px;
+        }
+        ul>li::marker{
+            color: red;
+            font-size: 30px;
+        }
+        p::selection{
+            background-color: black;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <a href="#">link1</a>
+    <a href="##">link2</a>
+    <a href="###">link3</a>
+    <a href="####">link4</a>
+    <a href="#####">link5</a>
+    <div class="d">
+        <p>hello1</p>
+        <p>hello2</p>
+        <p>hello3</p>
+        <p>hello4</p>
+        <p>hello5</p>
+    </div>
+    <div class="sp">abc</div>
+        <div class="c">abc</div>
+        <div class="c">abc</div>
+        <form>
+            FirstName: <input type="text" placeholder="Enter Name">
+        </form>
+        <br><br>
+        <ul>
+            <li>abc</li>
+            <li>abc</li>
+            <li>abc</li>
+            <li>abc</li>
+        </ul>
+        <ol>
+            <li>pqr</li>
+            <li>pqr</li>
+            <li>pqr</li>
+            <li>pqr</li>
+        </ol>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd's Transition</title>
+    <style>
+        #box{
+            border: 2px solid red;
+            background-color:yellow;
+            height: 200px;
+            width: 200px;
+            /* transition-property: height; */
+            /* transition-duration: 1s; */
+            transition-delay: 0s;
+            /*transition-timing-function: linear|ease-in|ease-out|ease|ease-in-out; */
+            /* transition-timing-function: ease-out ; */
+            transition: all 5s ease-in 0s;
+        }
+        #box:hover{
+            background-color:aqua;
+            height: 400px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
